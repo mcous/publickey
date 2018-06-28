@@ -1,5 +1,8 @@
 # @mcous/publickey
 
+[![@mcous/publickey][npm-badge]][npm]
+[![ci][ci-badge]][ci]
+
 > Mike Cousins' PGP Public Key
 
 ```
@@ -57,6 +60,11 @@ h9UQ39i3qrOfUqL+anIQ+0r0CqM=
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+[npm]: https://www.npmjs.com/package/@mcous/publickey
+[ci]: https://travis-ci.org/mcous/publickey
+[npm-badge]: https://img.shields.io/npm/v/@mcous/publickey.svg?style=flat-square
+[ci-badge]: https://img.shields.io/travis/mcous/publickey.svg?style=flat-square
+
 ## metadata
 
 |             | value                                    |
@@ -95,6 +103,5 @@ const comment = pk.comment          // https://mike.cousins.io
 ## http
 
 ```shell
-curl https://unpkg.com/@mcous/publickey
+curl -L https://unpkg.com/@mcous/publickey
 ```
-
