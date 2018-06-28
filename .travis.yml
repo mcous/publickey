@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+node_js:
+- lts/carbon
+script: npm run build
+deploy:
+  provider: npm
+  email: mike@cousins.io
+  skip_cleanup: true
+  on:
+    repo: mcous/publickey
+    tags: true
+    all_branches: true
+  api_key:
+    secure: ldwbzs0lY03OxXM0Hy4bRr4cGQIHqyzM6mbDS+6yf0HMMoxcBiApZUnw9Kq/YjZ0pfaspj9nLJJIv8wOuZjM33ggN8AsO9uJADD6hA1tMrqWXQ2Zq4IGUnbG59iQ6AvoXZGBdQp68LQjYXyk/5VKJpbfIqoKMR52tQRHT6zDn/4k/H7ucwjLmN2mgRPNnrqzV+Q2SvJi2Vx+fEXaPlPmy5qrniUQf7Yo9TEr9SOWQlQczXHMX1TSApTUAFkH6m5x/k/VWKLQhb82EGYVvhMz7ujWtCQ6rYKEv8eO6CUqLAkptI570w5buFyb1Lnf74NJDUwRzASD/RUmQsY6VYXPoYyxvYnKX/9fFFMbwJ9A8EH9NHCh8RB9gFFWKU1BOW3gUSkbHYzAX901zoRuVZ+YODGcJ18dg8MDQqkinKtbKomReFx1MstEz87Q+CydtryxoDTXA9QVGORhV0Uy1qv+5c/6y5v6xGGlbKJItsguARHb0EnSvYragmrQaDmQ0VSTRlnaDR7T8DbsHg/NCzVzy9p1KAIJGFDwjwr9SNgwGg+mXG4/o9aXxiWzFnD0ZZg9pVzDqdvT88RNb7B70izLQqsK00SwsCKXAGlUGew7FDWEFp72iE7flISpN70JCRUnlC6TjUaHDi43+Q+g4wU+aryfqJdq8hjUSc6Ezs4412g=

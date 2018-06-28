@@ -1,0 +1,39 @@
+{
+  "name": "@mcous/publickey",
+  "version": "0.0.0",
+  "description": "Mike Cousins' PGP Public Key",
+  "main": "dist.json",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dist": "node -p \"JSON.stringify(require('./src'), null, 2)\" > dist.json",
+    "docs": "node scripts/docs.js > README.md",
+    "build": "npm run dist && npm run docs",
+    "print": "node -p \"require('.')\"",
+    "postbuild": "npm run print"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcous/publickey.git"
+  },
+  "keywords": [
+    "cryptography",
+    "gpg",
+    "privacy",
+    "signature"
+  ],
+  "author": {
+    "name": "Mike Cousins",
+    "email": "mike@cousins.io",
+    "url": "https://mike.cousins.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcous/publickey/issues"
+  },
+  "homepage": "https://github.com/mcous/publickey#readme",
+  "devDependencies": {
+    "lodash.padend": "^4.6.1"
+  }
+}
