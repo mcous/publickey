@@ -1,6 +1,6 @@
 {
   "name": "@mcous/publickey",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Mike Cousins' PGP Public Key",
   "main": "dist.json",
   "publishConfig": {
